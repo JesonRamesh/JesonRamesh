@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@300;600;700&display=swap');
+
+      .bg { fill: #0d1117; }
+      .grid-line { stroke: #1e2a3a; stroke-width: 0.5; }
+
+      .name {
+        font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+        font-size: 42px;
+        font-weight: 700;
+        fill: #e6edf3;
+        letter-spacing: -1px;
+      }
+      .accent { fill: #58a6ff; }
+      .tagline {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 13px;
+        fill: #7d8590;
+      }
+      .tag {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+      .tag-green { fill: #7ee787; }
+      .tag-blue  { fill: #58a6ff; }
+      .tag-pink  { fill: #f778ba; }
+      .tag-cv    { fill: #79c0ff; }
+      .tag-robotics { fill: #d2a8ff; }
+      .tag-cisco { fill: #f78166; }
+
+      .cursor {
+        fill: #58a6ff;
+        animation: blink 1s step-end infinite;
+      }
+      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+      .typing-line    { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #7d8590; }
+      .typing-keyword { fill: #ff7b72; }
+      .typing-string  { fill: #a5d6ff; }
+      .typing-comment { fill: #3d444d; }
+
+      .orbit-ring { fill: none; stroke: #21262d; stroke-width: 1; stroke-dasharray: 4 4; }
+
+      .group-name    { animation: fadeUp 0.6s ease 0.1s both; }
+      .group-tagline { animation: fadeUp 0.6s ease 0.4s both; }
+      .group-tags    { animation: fadeUp 0.6s ease 0.7s both; }
+      .group-code    { animation: fadeUp 0.6s ease 1.0s both; }
+      .group-orb     { animation: fadeIn 1s ease 0.2s both; }
+
+      @keyframes fadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+      @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+
+      /* Green — outermost r=90 */
+      .p-green {
+        fill: #7ee787;
+        animation: orbitGreen 13s linear infinite;
+        transform-origin: 700px 140px;
+      }
+      /* Blue — mid r=70 */
+      .p-blue {
+        fill: #58a6ff;
+        animation: orbitBlue 9s linear infinite;
+        transform-origin: 700px 140px;
+      }
+      /* Pink — inner r=52 */
+      .p-pink {
+        fill: #f778ba;
+        animation: orbitPink 6s linear infinite;
+        transform-origin: 700px 140px;
+      }
+
+      @keyframes orbitGreen { from{transform:rotate(90deg) translateX(90px) rotate(-90deg)} to{transform:rotate(450deg) translateX(90px) rotate(-450deg)} }
+      @keyframes orbitBlue  { from{transform:rotate(30deg) translateX(70px) rotate(-30deg)} to{transform:rotate(390deg) translateX(70px) rotate(-390deg)} }
+      @keyframes orbitPink  { from{transform:rotate(210deg) translateX(52px) rotate(-210deg)} to{transform:rotate(570deg) translateX(52px) rotate(-570deg)} }
+
+      .scan-line { fill:none; stroke:#58a6ff; stroke-width:0.5; opacity:0.15; animation:scan 4s ease-in-out infinite; }
+      @keyframes scan { 0%{transform:translateY(-100px);opacity:0} 20%{opacity:0.15} 80%{opacity:0.15} 100%{transform:translateY(300px);opacity:0} }
+    </style>
+  </defs>
+
+  <rect width="900" height="280" class="bg" rx="12"/>
+
+  <g opacity="0.4">
+    <line x1="0" y1="40"  x2="900" y2="40"  class="grid-line"/>
+    <line x1="0" y1="80"  x2="900" y2="80"  class="grid-line"/>
+    <line x1="0" y1="120" x2="900" y2="120" class="grid-line"/>
+    <line x1="0" y1="160" x2="900" y2="160" class="grid-line"/>
+    <line x1="0" y1="200" x2="900" y2="200" class="grid-line"/>
+    <line x1="0" y1="240" x2="900" y2="240" class="grid-line"/>
+    <line x1="100" y1="0" x2="100" y2="280" class="grid-line"/>
+    <line x1="200" y1="0" x2="200" y2="280" class="grid-line"/>
+    <line x1="300" y1="0" x2="300" y2="280" class="grid-line"/>
+    <line x1="400" y1="0" x2="400" y2="280" class="grid-line"/>
+    <line x1="500" y1="0" x2="500" y2="280" class="grid-line"/>
+    <line x1="600" y1="0" x2="600" y2="280" class="grid-line"/>
+    <line x1="700" y1="0" x2="700" y2="280" class="grid-line"/>
+    <line x1="800" y1="0" x2="800" y2="280" class="grid-line"/>
+  </g>
+
+  <line x1="0" y1="0" x2="900" y2="0" class="scan-line"/>
+
+  <!-- LEFT — identity -->
+  <g class="group-name">
+    <text x="48" y="92" class="typing-line">
+      <tspan class="typing-keyword">const</tspan>
+      <tspan fill="#e6edf3"> engineer </tspan>
+      <tspan fill="#7d8590">= </tspan>
+    </text>
+    <text x="48" y="148" class="name">Jeson <tspan class="accent">Ramesh</tspan></text>
+    <!-- x=332 hardcoded from fonttools measurement of Space Grotesk Bold 700 42px letter-spacing:-1px -->
+    <rect class="cursor" x="332" y="112" width="3" height="42" rx="1"/>
+  </g>
+
+  <g class="group-tagline">
+    <text x="48" y="175" class="tagline">MEng Robotics &amp; AI · UCL  |  London</text>
+  </g>
+
+  <!-- Pills -->
+  <g class="group-tags">
+    <rect x="48"  y="193" width="66"  height="22" rx="4" fill="#0d2a15"/>
+    <text x="81"  y="208" text-anchor="middle" class="tag tag-green">ML / AI</text>
+
+    <rect x="122" y="193" width="128" height="22" rx="4" fill="#0c1e2e"/>
+    <text x="186" y="208" text-anchor="middle" class="tag tag-cv">Computer Vision</text>
+
+    <rect x="258" y="193" width="78"  height="22" rx="4" fill="#1a1033"/>
+    <text x="297" y="208" text-anchor="middle" class="tag tag-robotics">Robotics</text>
+
+    <rect x="48"  y="223" width="108" height="22" rx="4" fill="#2b1008"/>
+    <text x="102" y="238" text-anchor="middle" class="tag tag-cisco">Ex-Cisco Intern</text>
+
+    <rect x="164" y="223" width="60"  height="22" rx="4" fill="#0c1e2e"/>
+    <text x="194" y="238" text-anchor="middle" class="tag tag-cv">UCL '28</text>
+  </g>
+
+  <!-- RIGHT — orbit system -->
+  <g class="group-orb">
+    <!-- Three rings -->
+    <circle cx="700" cy="140" r="90" class="orbit-ring"/>
+    <circle cx="700" cy="140" r="70" class="orbit-ring"/>
+    <circle cx="700" cy="140" r="52" class="orbit-ring"/>
+
+    <!-- Center node -->
+    <circle cx="700" cy="140" r="28" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <text x="700" y="136" text-anchor="middle" class="tag tag-green" font-size="10">JESON</text>
+    <text x="700" y="149" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="8" fill="#58a6ff">AI · Robotics</text>
+
+    <!-- Particles -->
+    <circle class="p-green" cx="700" cy="140" r="4.5"/>
+    <circle class="p-blue"  cx="700" cy="140" r="5"/>
+    <circle class="p-pink"  cx="700" cy="140" r="3.5"/>
+
+    <!--
+      6 labels evenly spaced at 60° intervals OUTSIDE r=90 (label radius = 115).
+      Centre of orbit = (700, 140).
+      Angles (0° = top, clockwise):
+        0°   → top        → (700, 140-115)      = (700,  25)   GREEN: ROS 2
+        60°  → top-right  → (700+99.6, 140-57.5)= (800,  82.5) BLUE:  PyTorch
+        120° → bot-right  → (700+99.6, 140+57.5)= (800, 197.5) PINK:  TensorFlow
+        180° → bottom     → (700, 140+115)       = (700, 255)   GREEN: SLAM
+        240° → bot-left   → (700-99.6, 140+57.5) = (600, 197.5) BLUE:  OpenCV
+        300° → top-left   → (700-99.6, 140-57.5) = (600,  82.5) PINK:  CNNs
+      r*sin60 = 115*0.866 = 99.6, r*cos60 = 115*0.5 = 57.5
+    -->
+
+    <!-- GREEN (0° top, 180° bottom) -->
+    <text x="700" y="22"  text-anchor="middle" class="tag tag-green" font-size="10">ROS 2</text>
+    <text x="700" y="260" text-anchor="middle" class="tag tag-green" font-size="10">SLAM</text>
+
+    <!-- BLUE (60° top-right, 240° bottom-left) -->
+    <text x="802" y="86"  text-anchor="start"  class="tag tag-blue"  font-size="10">PyTorch</text>
+    <text x="598" y="201" text-anchor="end"    class="tag tag-blue"  font-size="10">OpenCV</text>
+
+    <!-- PINK (120° bottom-right, 300° top-left) -->
+    <text x="802" y="201" text-anchor="start"  class="tag tag-pink"  font-size="10">TensorFlow</text>
+    <text x="598" y="86"  text-anchor="end"    class="tag tag-pink"  font-size="10">CNNs</text>
+  </g>
+
+  <!-- Bottom code snippet -->
+  <g class="group-code">
+    <rect x="48" y="252" width="480" height="18" rx="3" fill="#161b22" opacity="0.8"/>
+    <text x="56" y="264" class="typing-line">
+      <tspan class="typing-comment"># </tspan>
+      <tspan class="typing-string">"building real-time intelligent systems, one commit at a time"</tspan>
+    </text>
+  </g>
+
+
+</svg>
