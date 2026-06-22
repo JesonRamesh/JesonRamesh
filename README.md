@@ -121,7 +121,7 @@ PID control and sensor fusion across IR, ultrasonic, and IMU. Tank-style chassis
 ## *Experience*
 
 ```
-Cisco (AI System Engineer Intern)    Mar 2026 – Present
+Cisco (AI System Engineer Intern)    Mar 2026 – June 2026
   └── Co-built Cerberus: kernel-level eBPF LLM security sandbox on Linux 6.8+
       54 tests · 4 syscall surfaces · zero latency overhead
 
