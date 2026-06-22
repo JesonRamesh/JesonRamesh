@@ -15,7 +15,7 @@
 </div>
 
 ---
-## | About |
+## *About* 
 
 I'm interested in the hard end of computer vision, where a model has to run on the device, under real-world noise, within a latency budget that doesn't forgive. My focus is **perception systems on edge hardware**: real-time detection and tracking pipelines, Visual SLAM in GPS-denied environments, and on-device inference without the safety net of the cloud.
 
@@ -25,7 +25,7 @@ Currently at UCL MEng Robotics & AI, and previously at Cisco building kernel-lev
 
 ---
 
-## | Tech Stack |
+## *Tech Stack*
 
 **Languages**
 
@@ -57,7 +57,7 @@ Currently at UCL MEng Robotics & AI, and previously at Cisco building kernel-lev
 
 ---
 
-## | Projects |
+## *Projects*
 
 <table>
 <tr>
@@ -118,7 +118,7 @@ PID control and sensor fusion across IR, ultrasonic, and IMU. Tank-style chassis
 
 ---
 
-## | Experience |
+## *Experience*
 
 ```
 Cisco (AI System Engineer Intern)    Mar 2026 – Present
