@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./header.svg" alt="Jeson Ramesh — MEng Robotics & AI @ UCL | Ex-Cisco | Computer Vision · Robotics · ML" width="900"/>
+  <img src="./header_v2.svg" alt="Jeson Ramesh — MEng Robotics & AI @ UCL | Ex-Cisco | Computer Vision · Robotics · ML" width="900"/>
 </div>
 
 ---
@@ -121,6 +121,10 @@ PID control and sensor fusion across IR, ultrasonic, and IMU. Tank-style chassis
 ## *Experience*
 
 ```
+Tenyks (Machine Learning Engineer Intern)    Aug 2026 - Present
+  └── Architecting and optimising end-to-end computer vision systems
+      for robust, real-time production inference.
+
 Cisco (AI System Engineer Intern)    Mar – June 2026
   └── Co-built Cerberus: kernel-level eBPF LLM security sandbox on Linux 6.8+
       54 tests · 4 syscall surfaces · zero latency overhead
