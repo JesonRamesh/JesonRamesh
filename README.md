@@ -10,8 +10,8 @@
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/JesonRamesh)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:jesonpl2006@gmail.com)
 ![UCL](https://img.shields.io/badge/UCL-MEng_Robotics_%26_AI-500778?style=flat-square)
+![Tenyks](https://img.shields.io/badge/ML_Engineer-Tenyks-4213c5?style=flat-square)
 ![Cisco](https://img.shields.io/badge/Ex--Intern-Cisco-1ba0d7?style=flat-square&logo=cisco&logoColor=white)
-
 </div>
 
 ---
